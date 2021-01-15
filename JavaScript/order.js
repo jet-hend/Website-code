@@ -27,38 +27,34 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    var user=getCookie("username");
-    var itemNUM=getCookie("item#");
-    if (user != "") {
-    //   load orders here
-    console.log("hello " + user);
-    console.log(itemNUM);
-
-    } else {
-        console.log("No Items");
-    //    user = prompt("Please enter your name:","");
-    //    if (user != "" && user != null) {
-    //      setCookie("username", user, 30);
-    //     //  set orders here
-    //    }
-    }
+    if (getCookie("Item1") != null) {console.log(getCookie("Item1"))}
+    if (getCookie("Item2") != null) {console.log(getCookie("Item2"))}
+    if (getCookie("Item3") != null) {console.log(getCookie("Item3"))}
+    if (getCookie("Item4") != null) {console.log(getCookie("Item4"))}
+    if (getCookie("Item5") != null) {console.log(getCookie("Item5"))}
 }
 function addItem(itemNum) {
   switch (itemNum) {
     case 1:
-      setCookie("Item1", "Polly Fox", 30);
+      setCookie("Item1", "Polly Fox", .5);
       break;
     case 2:
-      setCookie("Item2", "idk1", 30);
+      setCookie("Item2", "Slug", .5);
       break;
     case 3:
-      setCookie("Item3", "twist", 30);
+      setCookie("Item3", "twist", .5);
       break;
     case 4:
-      setCookie("Item4", "idk2", 30);
+      setCookie("Item4", "toad", .5);
       break;
     case 5:
-      setCookie("Item5", "idk3", 30);
+      setCookie("Item5", "octo", .5);
+      break;
+    case 6:
+      break;
+    case 7:
+      var userName = document.getElementById("userText").value;
+      setCookie("username", );
       break;
     default:
       alert("Item Not Found!");

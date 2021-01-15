@@ -37,16 +37,25 @@
                 </button>
         </nav>
 
-        <h1 class="big">Thank you...</h1>
+        <h1 class="big">Order</h1>
         <hr class="bar">
 
-        <ul>
-            <li><button onclick="addItem(1);">polly fox</button></li>
-            <li><button onclick="addItem(2);"></button></li>
-            <li><button onclick="addItem(3);">twist</button></li>
-            <li><button onclick="addItem(4);"></button></li>
-            <li><button onclick="addItem(5);"></button></li>
-            <li><button onclick="addItem(6);"></button></li>
+        <p>You can only order one item at a time, but you can order multiplbe times</p>
+
+        <hr class="bar">
+
+        <ul class="orderList">
+            <li><button onclick="addItem(1);"><img src="/images/fox.png" alt="Low-Poly Fox"></button></li><!--<a href="https://www.thingiverse.com/thing:937740">-->
+
+            <li><button onclick="addItem(2);"><img src="/images/slug.png" alt="Articulating Slug"></button></li><!--<a href="https://www.thingiverse.com/thing:2818955">-->
+
+            <li><button onclick="addItem(3);"><img src="/images/twist.png" alt="Twist Container"></button></li><!--<a href="https://www.thingiverse.com/thing:3046847">-->
+
+            <li><button onclick="addItem(4);"><img src="/images/toad.png" alt="Big Toad"></button></li><!--<a href="https://www.thingiverse.com/thing:23902">-->
+
+            <li><button onclick="addItem(5);"><img src="/images/octo.png" alt="Articulating octopus"></button></li><!--<a href="https://www.thingiverse.com/thing:3495390">-->
+                
+            <li><button onclick="addItem(6);" class="colorB">Custom</button></li>
         </ul>
     </body>
     <script type="text/javascript" src="JavaScript/order.js"></script>
