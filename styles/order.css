@@ -87,6 +87,8 @@ li a:hover {
     overflow: hidden;
     margin-left: auto;
     background: transparent;
+    margin: auto;
+    width: auto;
     
 }
 .orderList li {
@@ -96,6 +98,7 @@ li a:hover {
     padding: 20px;
     text-decoration: none;
 }
+
 .orderList img {
     height: 300px;
     width: 300px;
@@ -109,7 +112,6 @@ li a:hover {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin: auto;
 }
 
 .orderList button.colorB {
@@ -149,11 +151,7 @@ li a:hover {
         font-size: 2.8vw;
         font-weight: bold;
     }
-
-    .orderList {
-        margin: auto;
-    }
-
+    
     /*nav button start*/
 .container {
     display: inline-block;
