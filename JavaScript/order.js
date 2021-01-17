@@ -27,37 +27,72 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    if (getCookie("Item1") != null) {console.log(getCookie("Item1"))}
-    if (getCookie("Item2") != null) {console.log(getCookie("Item2"))}
-    if (getCookie("Item3") != null) {console.log(getCookie("Item3"))}
-    if (getCookie("Item4") != null) {console.log(getCookie("Item4"))}
-    if (getCookie("Item5") != null) {console.log(getCookie("Item5"))}
+    if (getCookie("Item1") != null) {console.log(getCookie("Item1")) }
+    if (getCookie("Item2") != null) {console.log(getCookie("Item2")) }
+    if (getCookie("Item3") != null) {console.log(getCookie("Item3")) }
+    if (getCookie("Item4") != null) {console.log(getCookie("Item4")) }
+    if (getCookie("Item5") != null) {console.log(getCookie("Item5")) }
 }
 function addItem(itemNum) {
   switch (itemNum) {
     case 1:
       setCookie("Item1", "Polly Fox", .5);
+      checkCookie();
       break;
     case 2:
       setCookie("Item2", "Slug", .5);
+      checkCookie();
       break;
     case 3:
       setCookie("Item3", "twist", .5);
+      checkCookie();
       break;
     case 4:
       setCookie("Item4", "toad", .5);
+      checkCookie();
       break;
     case 5:
       setCookie("Item5", "octo", .5);
+      checkCookie();
       break;
     case 6:
       break;
     case 7:
-      var userName = document.getElementById("userText").value;
-      setCookie("username", );
       break;
     default:
       alert("Item Not Found!");
       break;
   }
 }
+
+//slide show start
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+//slide show end
