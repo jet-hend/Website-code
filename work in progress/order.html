@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/order.css">
+    <title>Order</title>
+    <link rel="icon" href="icons/Hotend.png">
+</head>
+    <body onload="checkCookie()">
+        <nav>
+            <div class="desktopNav">
+                <ul calss="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <div class="nav-right">
+                        <li><a href="https://github.com/jet-hend/" target="_blank">GitHub</a></li>
+                        <li><a href="https://linktr.ee/jet_hend" target="_blank">linktree</a><li>
+                        <li class="name">Jet_Hend</li>
+                </ul>
+            </div>
+            <div class="phoneNav">
+                <button class="container" onclick="navButton(this)"> 
+                    <ul class="links">
+                        <li><a style="color:transparent;">.</a></li>
+                        <li calss="#"><a href="index.html">Home</a></li>
+                        <li calss="#"><a href="about.html">About</a></li>
+                        <li calss="#"><a href="order.html">Order</a></li>
+                        <li calss="#"><a href="https://github.com/jet-hend/" target="_blank">GitHub</a></li>
+                        <li class="#"><a href="https://linktr.ee/jet_hend" target="_blank">linktree</a><li>
+                    </ul>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+        </nav>
+
+        <h1 class="big">Order</h1>
+        <hr class="bar">
+
+        <p>You can only order one item at a time, but you can order multiplbe times</p>
+
+        <hr class="bar">
+
+        <div>
+            <ul class="orderList">
+                <li><a href="orderPages/foxOrder.html"><img src="/images/fox.png" alt="Low-Poly Fox"></a></li><!--<a href="https://www.thingiverse.com/thing:937740">-->
+
+                <li><a href="orderPages/slugOrder.html"><img src="/images/slug.png" alt="Articulating Slug"></a></li><!--<a href="https://www.thingiverse.com/thing:2818955">-->
+
+                <li><a href="orderPages/twistOrder.html"><img src="/images/twist.png" alt="Twist Container"></a></li><!--<a href="https://www.thingiverse.com/thing:3046847">-->
+
+                <li><a href="orderPages/toadOrder.html"><img src="/images/toad.png" alt="Big Toad"></a></li><!--<a href="https://www.thingiverse.com/thing:23902">-->
+
+                <li><a href="orderPages/octoOrder.html"><img src="/images/octo.png" alt="Articulating octopus"></a></li><!--<a href="https://www.thingiverse.com/thing:3495390">-->
+
+            </ul>
+        </div>
+
+        <br>
+        <br>
+
+        <form id="test-form">
+  
+            <div>
+              <label>Field 1</label>
+              <input type="text" name="Name" placeholder="Field 1"/>
+            </div>
+          
+            <div>
+              <label>Field 2</label>
+              <input type="text" name="Object" placeholder="Item number"/>
+            </div>
+            
+            <div>
+              <label>Field 3</label>
+              <input type="text" name="Cost" placeholder="Price Limit"/>
+            </div>
+            
+            <div>
+              <label>Field 4</label>
+              <input type="text" name="Address" placeholder="Address"/>
+            </div>
+
+            <div>
+                <label>Field 5</label>
+                <input type="text" name="Info" placeholder="extra info"/>
+            </div>
+          
+            <div>
+              <button type="submit"id="submit-form">Submit</button>
+            </div>
+          
+          </form>
+    </body>
+    <script type="text/javascript" src="JavaScript/order.js"></script>
+</html>
